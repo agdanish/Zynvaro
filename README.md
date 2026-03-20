@@ -66,7 +66,9 @@
 
 ---
 
-## 🔥 The Crisis — Why This Matters
+<img src="assets/headers/crisis.svg" alt="The Crisis — Why This Matters" width="100%"/>
+
+<a name="-the-crisis--why-this-matters"></a>
 
 <div align="center">
 
@@ -107,7 +109,9 @@ India's **12.7 million gig workers** power the digital economy. Yet **80% have z
 
 ---
 
-## 🎯 Our Persona — The 10-Minute Sprinter
+<img src="assets/headers/persona.svg" alt="Our Persona — The 10-Minute Sprinter" width="100%"/>
+
+<a name="-our-persona--the-10-minute-sprinter"></a>
 
 ### Why Q-Commerce (Blinkit / Zepto / Instamart) — Not Food Delivery
 
@@ -170,7 +174,9 @@ graph LR
 
 ---
 
-## 🎬 Live Scenarios — How Zynvaro Responds
+<img src="assets/headers/scenarios.svg" alt="Live Scenarios — How Zynvaro Responds" width="100%"/>
+
+<a name="-live-scenarios--how-zynvaro-responds"></a>
 
 ### Scenario 1: 🌧️ Monsoon Flooding <sup><sub>HIGH FREQUENCY</sub></sup>
 
@@ -264,7 +270,9 @@ flowchart TD
 
 ---
 
-## 💰 Weekly Premium Model
+<img src="assets/headers/premium.svg" alt="Weekly Premium Model" width="100%"/>
+
+<a name="-weekly-premium-model"></a>
 
 ### Why Weekly — Not Monthly or Annual
 
@@ -320,7 +328,9 @@ xychart-beta
 
 ---
 
-## ⚡ Parametric Triggers — What Fires a Payout
+<img src="assets/headers/triggers.svg" alt="Parametric Triggers — What Fires a Payout" width="100%"/>
+
+<a name="-parametric-triggers--what-fires-a-payout"></a>
 
 > Every trigger must be: **(a)** objectively measurable via public APIs, **(b)** directly correlated with income loss, and **(c)** independently verifiable to resist fraud.
 
@@ -359,7 +369,9 @@ Beyond weather, we monitor:
 
 ---
 
-## 🧠 AI/ML Engine
+<img src="assets/headers/ai-engine.svg" alt="AI/ML Engine" width="100%"/>
+
+<a name="-aiml-engine"></a>
 
 ### 🏷️ 6.1 — Dynamic Premium Pricing
 
@@ -453,7 +465,9 @@ flowchart TD
 
 ---
 
-## 🛡️ Adversarial Defense & Anti-Spoofing Strategy
+<img src="assets/headers/anti-spoofing.svg" alt="Adversarial Defense & Anti-Spoofing Strategy" width="100%"/>
+
+<a name="️-adversarial-defense--anti-spoofing-strategy"></a>
 
 > [!WARNING]
 > **Market Crash Scenario:** 500 delivery workers coordinate via Telegram, install GPS-spoofing apps, fake locations into a red-alert weather zone while resting at home — attempting to drain the liquidity pool.
@@ -555,7 +569,9 @@ flowchart LR
 
 ---
 
-## 📱 Zero-Touch Claims — The User Experience
+<img src="assets/headers/ux.svg" alt="Zero-Touch Claims — The User Experience" width="100%"/>
+
+<a name="-zero-touch-claims--the-user-experience"></a>
 
 ### Onboarding: 3 Screens, < 60 Seconds
 
@@ -597,7 +613,9 @@ stateDiagram-v2
 
 ---
 
-## 🏗️ Tech Stack & Architecture
+<img src="assets/headers/techstack.svg" alt="Tech Stack & Architecture" width="100%"/>
+
+<a name="-tech-stack--architecture"></a>
 
 ### System Architecture
 
@@ -699,7 +717,9 @@ flowchart TB
 
 ---
 
-## 📊 Financial Viability — Unit Economics
+<img src="assets/headers/economics.svg" alt="Financial Viability — Unit Economics" width="100%"/>
+
+<a name="-financial-viability--unit-economics"></a>
 
 ### Weekly P&L — 10,000 Riders
 
@@ -751,7 +771,9 @@ During peak monsoon, trigger probability rises to 25-35%. The dynamic pricing en
 
 ---
 
-## 🗺️ Development Roadmap
+<img src="assets/headers/roadmap.svg" alt="Development Roadmap" width="100%"/>
+
+<a name="-development-roadmap"></a>
 
 ### Phase 2: Automation & Protection <sub>Mar 21 - Apr 4</sub>
 
@@ -804,7 +826,9 @@ gantt
 
 ---
 
-## 🏆 Why Zynvaro Wins
+<img src="assets/headers/why-we-win.svg" alt="Why Zynvaro Wins" width="100%"/>
+
+<a name="-why-zynvaro-wins"></a>
 
 ### What Makes This a ⭐⭐⭐⭐⭐, Not a ⭐⭐⭐
 
