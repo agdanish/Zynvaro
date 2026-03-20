@@ -1,581 +1,760 @@
-<p align="center">
-  <img src="docs/assets/kamai-kavach-banner.png" alt="KamaiKavach Banner" width="800"/>
-</p>
+<!-- ═══════════════════════════════════════════════════════════════════════════ -->
+<!--                           Z Y N V A R O                                  -->
+<!--        AI-Powered Parametric Income Shield for Q-Commerce India           -->
+<!-- ═══════════════════════════════════════════════════════════════════════════ -->
 
-<h1 align="center">KamaiKavach</h1>
-<h3 align="center">AI-Powered Parametric Income Shield for India's Q-Commerce Delivery Partners</h3>
+<div align="center">
 
-<p align="center">
-  <b>Team AeroFyta</b> | Guidewire DEVTrails 2026 — Unicorn Chase
-</p>
+![Header](https://capsule-render.vercel.app/api?type=waving&color=0:0F2027,50:203A43,100:2C5364&height=220&section=header&text=⚡%20Zynvaro&fontSize=70&fontColor=ffffff&animation=fadeIn&fontAlignY=35&desc=AI-Powered%20Parametric%20Income%20Shield&descSize=18&descAlignY=55&descAlign=50)
 
-<p align="center">
-  Danish A G (Lead) &bull; Sanjay N &bull; Athishaya K &bull; Vishal C B &bull; Hariharan C V
-</p>
+<img src="logo/Zynvaro-bg-removed.png" alt="Zynvaro Logo" width="180"/>
 
----
+### *When the city stops, your income doesn't.*
 
-## Table of Contents
+<br>
 
-1. [The Problem — Why This Matters](#1-the-problem--why-this-matters)
-2. [Our Persona — The 10-Minute Sprinter](#2-our-persona--the-10-minute-sprinter)
-3. [Persona-Based Scenarios & Workflow](#3-persona-based-scenarios--workflow)
-4. [Weekly Premium Model](#4-weekly-premium-model)
-5. [Parametric Triggers — What Fires a Payout](#5-parametric-triggers--what-fires-a-payout)
-6. [AI/ML Integration Plan](#6-aiml-integration-plan)
-7. [Adversarial Defense & Anti-Spoofing Strategy](#7-adversarial-defense--anti-spoofing-strategy)
-8. [Zero-Touch Claims — The User Experience](#8-zero-touch-claims--the-user-experience)
-9. [Platform Choice — Web vs Mobile](#9-platform-choice--web-vs-mobile)
-10. [Tech Stack & Architecture](#10-tech-stack--architecture)
-11. [Financial Viability — Unit Economics](#11-financial-viability--unit-economics)
-12. [Development Roadmap (Phase 2 & 3)](#12-development-roadmap-phase-2--3)
-13. [Why KamaiKavach Wins](#13-why-kamaikavach-wins)
+[![Guidewire DEVTrails](https://img.shields.io/badge/🏆_Guidewire-DEVTrails_2026-FF6B35?style=for-the-badge)](https://devtrails.guidewire.com)
+[![Team](https://img.shields.io/badge/Team-AeroFyta-blueviolet?style=for-the-badge&logo=rocket&logoColor=white)](#-team-aerofyta)
+[![Phase](https://img.shields.io/badge/Phase_1-Seed_Round-brightgreen?style=for-the-badge&logo=seedling&logoColor=white)](#)
+[![Riders](https://img.shields.io/badge/Target-12.7M_Gig_Workers-E34F26?style=for-the-badge&logo=uber&logoColor=white)](#)
+
+<br>
+
+![Python](https://img.shields.io/badge/Python-FastAPI-3776AB?style=flat-square&logo=python&logoColor=white)
+![React](https://img.shields.io/badge/React-PWA-61DAFB?style=flat-square&logo=react&logoColor=black)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-PostGIS-4169E1?style=flat-square&logo=postgresql&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-Streams-DC382D?style=flat-square&logo=redis&logoColor=white)
+![XGBoost](https://img.shields.io/badge/XGBoost-ML-F7931E?style=flat-square&logo=xgboost&logoColor=white)
+![WhatsApp](https://img.shields.io/badge/WhatsApp-Cloud_API-25D366?style=flat-square&logo=whatsapp&logoColor=white)
 
 ---
 
-## 1. The Problem — Why This Matters
+**Zynvaro** is a **zero-touch parametric insurance platform** that automatically detects weather disasters, platform outages, and civic disruptions — and pays gig delivery workers **within 5 minutes**, with **no claims, no forms, no calls**.
 
-India's 12.7 million gig workers are the backbone of the digital economy. Yet **80% have zero formal insurance**, and **no existing product covers income loss from external disruptions**.
+> *Built for Guidewire DEVTrails 2026 — Unicorn Chase*
 
-When Mumbai floods for three days, when Delhi's AQI hits 828, when a Cloudflare outage kills Blinkit for hours — delivery partners who can't work simply **lose income with no recourse**.
-
-**The gap we fill**: Platform-provided insurance covers accidents and health. Government schemes cover hospitalization. But when external disruptions halt work, riders bear 100% of the financial loss. KamaiKavach eliminates this gap.
-
-### The Numbers That Define the Crisis
-
-| Metric | Data Point | Source |
-|--------|-----------|--------|
-| Gig workers with zero savings | 90% | NITI Aayog |
-| Earnings drop during heatwave days | 40% | Nature 2024 (Das & Somanathan) |
-| Income loss per 1°C wet-bulb rise | 19% | Nature 2024 |
-| Q-Commerce GMV (2024) | $6-7 Billion | RedSeer / Bain |
-| Annual heatwave days (India, 2024) | 536 nationally | CII / IMD |
-| Delhi AQI > 400 days per winter | 30-50 days | CPCB |
+</div>
 
 ---
 
-## 2. Our Persona — The 10-Minute Sprinter
+> [!IMPORTANT]
+> **What is Parametric Insurance?** Unlike traditional insurance where you file a claim and wait, parametric insurance pays out **automatically** when a measurable trigger crosses a threshold. If IMD rainfall data shows > 64.5mm in your zone — you get paid. Period. No adjuster, no paperwork, no waiting.
+
+---
+
+## 📑 Table of Contents
+
+<details open>
+<summary><b>Click to navigate</b></summary>
+
+| # | Section | What You'll Learn |
+|:-:|---------|------------------|
+| 🔥 | [The Crisis](#-the-crisis--why-this-matters) | Why 12.7M gig workers need this |
+| 🎯 | [Our Persona](#-our-persona--the-10-minute-sprinter) | Why Q-Commerce, not food delivery |
+| 🎬 | [Live Scenarios](#-live-scenarios--how-zynvaro-responds) | 4 real-world disruption walkthroughs |
+| 💰 | [Premium Model](#-weekly-premium-model) | ₹29-₹89/week dynamic pricing |
+| ⚡ | [Parametric Triggers](#-parametric-triggers--what-fires-a-payout) | 6 measurable trigger events |
+| 🧠 | [AI/ML Engine](#-aiml-engine) | 4-layer fraud detection + predictive risk |
+| 🛡️ | [Anti-Spoofing](#-adversarial-defense--anti-spoofing-strategy) | 7-signal authenticity scoring |
+| 📱 | [User Experience](#-zero-touch-claims--the-user-experience) | 3-screen onboarding, invisible claims |
+| 🏗️ | [Architecture](#-tech-stack--architecture) | Full system design + tech choices |
+| 📊 | [Unit Economics](#-financial-viability--unit-economics) | LTV/CAC 9.7x, 62.8% loss ratio |
+| 🗺️ | [Roadmap](#-development-roadmap) | Phase 2 & 3 deliverables |
+| 🏆 | [Why We Win](#-why-zynvaro-wins) | 5 unicorn differentiators |
+
+</details>
+
+---
+
+## 🔥 The Crisis — Why This Matters
+
+<div align="center">
+
+```
+     ╔══════════════════════════════════════════════════════════════╗
+     ║                                                              ║
+     ║   🌧️ Mumbai floods → 3 days lost income → ₹0 recourse       ║
+     ║   🏭 Delhi AQI 828 → riders can't breathe → ₹0 recourse     ║
+     ║   ☁️ Cloudflare down → Blinkit dies → ₹0 recourse            ║
+     ║                                                              ║
+     ║   Platform insurance covers accidents.                       ║
+     ║   Government covers hospitalization.                         ║
+     ║                                                              ║
+     ║   ❌ NOBODY covers income loss from external disruptions.    ║
+     ║                                                              ║
+     ║   ✅ Zynvaro fills this gap.                                 ║
+     ║                                                              ║
+     ╚══════════════════════════════════════════════════════════════╝
+```
+
+</div>
+
+India's **12.7 million gig workers** power the digital economy. Yet **80% have zero formal insurance**, and **no existing product** covers income loss from external disruptions.
+
+### 📉 The Numbers That Define the Crisis
+
+| Metric | Data | Source |
+|:-------|:----:|:------:|
+| Gig workers with **zero savings** | **90%** | NITI Aayog |
+| Earnings drop during heatwave days | **40%** | Nature 2024 (Das & Somanathan) |
+| Income loss per 1°C wet-bulb rise | **19%** | Nature 2024 |
+| Q-Commerce GMV (2024) | **$6-7B** | RedSeer / Bain |
+| Annual heatwave days across India | **536** | CII / IMD |
+| Delhi AQI > 400 days per winter | **30-50** | CPCB |
+
+> [!CAUTION]
+> When a disruption hits a Q-Commerce zone, riders don't gradually lose income — they go from **full earnings to ₹0 in minutes**. The platform algorithm shuts down the zone instantly. No orders = no income = no safety net. Until now.
+
+---
+
+## 🎯 Our Persona — The 10-Minute Sprinter
 
 ### Why Q-Commerce (Blinkit / Zepto / Instamart) — Not Food Delivery
 
-Most teams will default to Zomato/Swiggy food delivery. We chose Q-Commerce because it is **structurally more vulnerable** to external disruptions:
+> [!TIP]
+> Most teams will default to Zomato/Swiggy food delivery riders. We chose **Q-Commerce** because it is **structurally more vulnerable** to disruptions — making it the ideal blue-ocean for parametric insurance.
 
-| Factor | Food Delivery | Q-Commerce (Our Pick) |
-|--------|--------------|----------------------|
-| Delivery SLA | 30-45 min | **10-15 min** |
-| Radius | Up to 7 km | **2-3 km (dark store)** |
-| Impact of 30 min heavy rain | Orders delayed | **Entire dark store paused, income = 0** |
-| Algorithmic response to disruption | Reduced orders | **Instant zone shutdown** |
-| Measurability of disruption | Moderate | **High** (tight geofence around dark stores) |
+```mermaid
+graph LR
+    A["🍔 Food Delivery"] -->|"30-45 min SLA"| B["Orders delayed<br>Income reduced"]
+    C["⚡ Q-Commerce<br><b>OUR PICK</b>"] -->|"10-15 min SLA"| D["Zone SHUTDOWN<br><b>Income = ₹0</b>"]
 
-Q-Commerce operates on an ultra-condensed supply chain. When a localized disruption hits — a flooded intersection near a dark store, a sudden AQI spike — the platform's algorithm **instantly disables the zone**. The rider's earning potential drops to zero within minutes. This "SLA brittleness" makes Q-Commerce the ideal candidate for parametric insurance.
+    style C fill:#FF6B35,stroke:#fff,color:#fff,stroke-width:2px
+    style D fill:#E34F26,stroke:#fff,color:#fff,stroke-width:2px
+    style A fill:#555,stroke:#999,color:#fff
+    style B fill:#777,stroke:#999,color:#fff
+```
 
-### Meet Ravi — Our Target User
+| Factor | Food Delivery | Q-Commerce **(Our Pick)** |
+|:------:|:------------:|:------------------------:|
+| Delivery SLA | 30-45 min | **⚡ 10-15 min** |
+| Delivery Radius | Up to 7 km | **📍 2-3 km (dark store)** |
+| 30 min heavy rain impact | Orders delayed | **🚫 Entire zone PAUSED** |
+| Algorithmic response | Reduced orders | **⛔ Instant zone shutdown** |
+| Disruption measurability | Moderate | **📏 HIGH** (tight geofence) |
 
-> **Ravi, 27, Blinkit rider in Koramangala, Bangalore. Rides a 2-wheeler. Works peak + late shift (6 PM - 2 AM) from a dark store cluster. Nets ~₹18,000-21,000/month after fuel. Has zero savings and no insurance.**
+> Q-Commerce operates on an ultra-condensed supply chain. When a localized disruption hits — a flooded intersection near a dark store, a sudden AQI spike — the platform's algorithm **instantly disables the zone**. This **"SLA brittleness"** makes Q-Commerce the ideal candidate for parametric insurance.
 
-**Ravi's Reality:**
-- Completes 2.3-2.5 deliveries/hour (vs 1.8-2.0 for food delivery)
-- Gross monthly: ₹16,000-31,000 | Net after fuel/maintenance (20%): **₹12,000-24,000**
-- Peak hours: 7-11 AM (groceries/milk) + 6-11 PM (snacks/household)
-- During Bangalore's October 2024 flooding (157mm in 6 hours), Q-commerce operations were **completely halted** — Ravi earned ₹0 for 2 days
-- During the December 2025 Cloudflare outage, Blinkit/Zomato/Swiggy went down simultaneously — **riders were stranded in zones for hours without pay**
+### 👤 Meet Ravi — Our Target User
 
-**What makes Ravi actually pay ₹49/week:**
-- **Micro-pricing**: ₹49/week = less than the cost of one delivery order. Framed as "less than one order per week to protect all your earnings"
-- **Loss-aversion framing**: "Your income is at risk this week" — riders are more motivated to avoid losses than chase gains
-- **Default renewal via UPI AutoPay**: Status quo bias keeps them subscribed
-- **Instant value**: "You are covered for tonight's shift" displayed immediately after payment
-- **Deterministic rules**: Payout triggers a rider can verify externally (check IMD rainfall data themselves)
+<table>
+<tr>
+<td width="70%">
+
+> **Ravi, 27** — Blinkit rider in Koramangala, Bangalore
+> - 🛵 Rides a 2-wheeler, works peak + late shift (6 PM - 2 AM)
+> - 💰 Nets ~₹18,000-21,000/month after fuel
+> - 🏪 Operates from a dark store cluster
+> - 💳 **Zero savings. Zero insurance.**
+>
+> During Bangalore's October 2024 flooding (157mm in 6 hours), Q-commerce operations were **completely halted** — Ravi earned **₹0 for 2 days**.
+
+</td>
+<td width="30%" align="center">
+
+**What makes Ravi pay ₹49/week?**
+
+🪙 Micro-pricing<br><sub>Less than 1 delivery order</sub>
+
+😰 Loss-aversion framing<br><sub>"Your income is at risk"</sub>
+
+🔄 UPI AutoPay<br><sub>Status quo bias</sub>
+
+⚡ Instant value<br><sub>"Covered for tonight"</sub>
+
+✅ Deterministic rules<br><sub>Verify on IMD yourself</sub>
+
+</td>
+</tr>
+</table>
 
 ---
 
-## 3. Persona-Based Scenarios & Workflow
+## 🎬 Live Scenarios — How Zynvaro Responds
 
-### Scenario 1: Monsoon Flooding (High Frequency)
+### Scenario 1: 🌧️ Monsoon Flooding <sup><sub>HIGH FREQUENCY</sub></sup>
 
-> **Tuesday, 7:45 PM**: Ravi starts his evening shift at the Koramangala dark store. At 8:30 PM, torrential rain begins — 72mm in 90 minutes. The dark store algorithm pauses all outgoing orders. Ravi is stuck under a shop awning.
+> **Tuesday, 7:45 PM** — Ravi starts his evening shift. At 8:30 PM, torrential rain begins — **72mm in 90 minutes**. The dark store pauses all orders. Ravi is stuck under a shop awning.
 
-**KamaiKavach Response (Zero-Touch):**
-1. `8:35 PM` — Our trigger engine detects rainfall > 64.5mm (IMD "Heavy Rain" threshold) in Ravi's H3 zone via OpenWeatherMap API
-2. `8:36 PM` — Cross-validates with IMD API data (dual-source confirmation)
-3. `8:37 PM` — Fraud engine checks: Ravi's GPS is in the affected zone, his device sensors show outdoor conditions, his accelerometer confirms he was mobile before the rain started
-4. `8:38 PM` — Claim auto-approved. ₹300 payout initiated via RazorpayX to Ravi's UPI
-5. `8:40 PM` — WhatsApp notification: *"Heavy Rain detected in Koramangala. Deliveries are paused. KamaiKavach has credited ₹300 to your account for lost shift time. Stay safe!"*
+```mermaid
+sequenceDiagram
+    autonumber
+    participant 🌧️ as Weather APIs
+    participant ⚙️ as Trigger Engine
+    participant 🛡️ as Fraud Pipeline
+    participant 💸 as RazorpayX
+    participant 📱 as Ravi's WhatsApp
 
-**Total time from disruption to money-in-account: ~5 minutes. Zero buttons pressed by Ravi.**
+    🌧️->>⚙️: 8:35 PM — Rainfall > 64.5mm detected (IMD threshold)
+    ⚙️->>⚙️: Cross-validate with dual-source (OpenWeather + IMD)
+    ⚙️->>🛡️: 8:36 PM — Initiate claim for zone riders
+    🛡️->>🛡️: GPS ✓ | Device sensors ✓ | Activity ✓ | Score: 92/100
+    🛡️->>💸: 8:37 PM — Auto-approved
+    💸->>📱: 8:38 PM — ₹300 credited via UPI
+    📱->>📱: "Heavy Rain in Koramangala. ₹300 credited. Stay safe! 🌂"
 
-### Scenario 2: Platform Outage (Novel — Most Teams Will Miss This)
+    Note over 🌧️,📱: ⏱️ Total: Disruption → Money in Account = ~5 minutes<br>👆 Zero buttons pressed by Ravi
+```
 
-> **Saturday, 1:15 PM** (Peak lunch demand): Cloudflare experiences a global outage. Blinkit, Zepto, and Swiggy APIs return HTTP 503 errors. 200,000+ riders nationwide are instantly unable to receive orders.
+### Scenario 2: ☁️ Platform Outage <sup><sub>NOVEL — MOST TEAMS WILL MISS THIS</sub></sup>
 
-**KamaiKavach Response:**
-1. `1:18 PM` — Our synthetic monitoring probes detect Blinkit's partner-facing API returning 503 errors for >3 minutes across 5 geographically distributed endpoints
-2. `1:20 PM` — Cross-validates with secondary signals: Downdetector spike, social media mentions via GDELT
-3. `1:25 PM` — After 10-minute sustained outage confirmation, all active policyholders with "shift active" heartbeat signals receive automatic payout
-4. `1:30 PM` — ₹300 credited to each affected rider's UPI
+> **Saturday, 1:15 PM** — Cloudflare global outage. Blinkit, Zepto, Swiggy APIs return HTTP 503. **200,000+ riders** nationwide unable to receive orders.
 
-### Scenario 3: Severe Air Pollution (Seasonal, Delhi-Specific)
+```mermaid
+sequenceDiagram
+    autonumber
+    participant 🔍 as Synthetic Monitors
+    participant 📡 as Downdetector
+    participant ⚙️ as Trigger Engine
+    participant 💸 as RazorpayX
 
-> **November 15, Delhi**: AQI hits 485 ("Severe"). GRAP Stage IV activated. Ravi's counterpart Amit in Dwarka sees reduced order flow as restaurants close tandoors and customers self-restrict.
+    🔍->>⚙️: 1:18 PM — HTTP 503 from 5 geo-distributed probes
+    📡->>⚙️: 1:19 PM — Downdetector spike confirmed
+    ⚙️->>⚙️: 10-min sustained outage → trigger confirmed
+    ⚙️->>💸: 1:25 PM — Bulk payout to all active policyholders
+    💸->>💸: ₹300 credited to each affected rider
 
-**KamaiKavach Response:**
+    Note over 🔍,💸: 📌 Platform outage insurance is our UNIQUE differentiator<br>Cloudflare Dec 2025 outage proved this is real
+```
+
+<details>
+<summary><b>📋 Scenario 3: Severe Air Pollution (Delhi)</b></summary>
+
+> **November 15, Delhi** — AQI hits **485 ("Severe")**. GRAP Stage IV activated.
+
 1. WAQI API + CPCB station both report AQI > 400 for 24 continuous hours
 2. Dual-source validation confirms the event
-3. Riders in affected pincodes with active shift history receive partial-day payout (₹150) reflecting ~20-30% income impact
+3. Riders in affected pincodes receive partial-day payout (**₹150**) reflecting ~20-30% income impact
 
-### Scenario 4: Coordinated Fraud Attempt (Market Crash Compliance)
+</details>
 
-> **500 riders in Mumbai organize via Telegram**. They install GPS-spoofing apps and fake their locations into a red-alert weather zone while sitting at home.
+<details>
+<summary><b>🚨 Scenario 4: Coordinated Fraud Attempt (Market Crash)</b></summary>
 
-**KamaiKavach Response:** See [Section 7 — Adversarial Defense & Anti-Spoofing Strategy](#7-adversarial-defense--anti-spoofing-strategy)
+> **500 riders in Mumbai organize via Telegram** — install GPS-spoofing apps, fake locations into a red-alert weather zone while sitting at home.
 
-### End-to-End Application Workflow
+**Zynvaro's Response:** → See [Adversarial Defense & Anti-Spoofing Strategy](#️-adversarial-defense--anti-spoofing-strategy)
 
-```
-┌──────────────┐     ┌───────────────┐     ┌──────────────────┐
-│   ONBOARDING │────▶│ RISK PROFILING │────▶│ POLICY CREATION   │
-│  (3 screens) │     │   (AI/ML)     │     │ (Weekly Premium)  │
-└──────────────┘     └───────────────┘     └──────────────────┘
-                                                    │
-                     ┌──────────────────────────────┘
-                     ▼
-┌──────────────────────────────┐     ┌────────────────────┐
-│  REAL-TIME TRIGGER MONITORING │────▶│  CLAIM AUTO-TRIGGER │
-│  (Weather, AQI, Outage APIs) │     │  (Parametric Event) │
-└──────────────────────────────┘     └────────────────────┘
-                                              │
-                     ┌────────────────────────┘
-                     ▼
-┌──────────────────────────────┐     ┌────────────────────┐
-│  4-LAYER FRAUD DETECTION     │────▶│  INSTANT UPI PAYOUT │
-│  (Anti-Spoofing Pipeline)    │     │  (RazorpayX)       │
-└──────────────────────────────┘     └────────────────────┘
-                                              │
-                     ┌────────────────────────┘
-                     ▼
-┌──────────────────────────────┐
-│  ANALYTICS DASHBOARD         │
-│  Workers: Earnings protected │
-│  Insurers: Loss ratios, AI   │
-└──────────────────────────────┘
+*Spoiler: Our 7-signal authenticity scoring catches them. GPS alone is only 10% of the score.*
+
+</details>
+
+### 🔄 End-to-End Application Workflow
+
+```mermaid
+flowchart TD
+    A["📝 ONBOARDING<br><sub>3 screens, < 60 seconds</sub>"] --> B["🧠 RISK PROFILING<br><sub>AI/ML zone + rider analysis</sub>"]
+    B --> C["📋 POLICY CREATION<br><sub>Weekly premium, UPI AutoPay</sub>"]
+    C --> D["📡 REAL-TIME MONITORING<br><sub>Weather, AQI, Outage APIs</sub>"]
+    D --> E{"⚡ TRIGGER<br>DETECTED?"}
+    E -->|"Yes"| F["🛡️ 4-LAYER FRAUD CHECK<br><sub>< 2 minutes</sub>"]
+    E -->|"No"| D
+    F --> G{"Score<br>≥ 75?"}
+    G -->|"Auto-Approve"| H["💸 INSTANT UPI PAYOUT<br><sub>RazorpayX → Rider's UPI</sub>"]
+    G -->|"45-74"| I["⏳ Escrow Hold<br><sub>Enhanced verification, 2 hrs</sub>"]
+    G -->|"< 45"| J["🔍 Manual Review<br><sub>24-hour queue</sub>"]
+    H --> K["📊 ANALYTICS DASHBOARD<br><sub>Loss ratios, trigger feed, fraud flags</sub>"]
+
+    style A fill:#4CAF50,stroke:#fff,color:#fff
+    style E fill:#FF9800,stroke:#fff,color:#fff
+    style F fill:#9C27B0,stroke:#fff,color:#fff
+    style H fill:#2196F3,stroke:#fff,color:#fff
+    style K fill:#607D8B,stroke:#fff,color:#fff
 ```
 
 ---
 
-## 4. Weekly Premium Model
+## 💰 Weekly Premium Model
 
 ### Why Weekly — Not Monthly or Annual
 
-Gig workers operate week-to-week. Their platform payouts settle weekly. A ₹200/month premium triggers loss aversion. A ₹49/week premium — deducted automatically on payout day via UPI AutoPay — feels like a platform fee, not an insurance bill.
+> Gig workers operate **week-to-week**. Their platform payouts settle weekly. A ₹200/month premium triggers loss aversion. A **₹49/week** premium — deducted on payout day via UPI AutoPay — feels like a platform fee, not an insurance bill.
 
-### Coverage Tiers
+### 📋 Coverage Tiers
 
-| Tier | Weekly Premium | Triggers Covered | Max Daily Payout | Max Weekly Payout | Target User |
-|------|---------------|-----------------|-----------------|-------------------|-------------|
-| **Basic Shield** | ₹29 | AQI > 400, Heat > 45°C | ₹300 | ₹600 | Part-time riders, low-risk cities |
-| **Standard Guard** | ₹49 | Basic + Heavy Rain, Traffic Gridlock | ₹600 | ₹1,200 | Full-time riders, average-risk cities |
-| **Pro Armor** | ₹89 | Standard + Platform Outages, Civil Disruption | ₹1,000 | ₹2,000 | High-risk weeks (monsoon/pollution season) |
+<div align="center">
 
-### How Dynamic Pricing Works
+| | 🟢 **Basic Shield** | 🔵 **Standard Guard** | 🟣 **Pro Armor** |
+|:--|:--:|:--:|:--:|
+| **Weekly Premium** | **₹29** | **₹49** | **₹89** |
+| AQI > 400 | ✅ | ✅ | ✅ |
+| Heatwave > 45°C | ✅ | ✅ | ✅ |
+| Heavy Rainfall | ❌ | ✅ | ✅ |
+| Traffic Gridlock | ❌ | ✅ | ✅ |
+| Platform Outage | ❌ | ❌ | ✅ |
+| Civil Disruption | ❌ | ❌ | ✅ |
+| Max Daily Payout | ₹300 | ₹600 | ₹1,000 |
+| Max Weekly Payout | ₹600 | ₹1,200 | ₹2,000 |
+| **Target User** | *Part-time,<br>low-risk city* | *Full-time,<br>avg-risk city* | *High-risk weeks<br>(monsoon/pollution)* |
 
-Premiums are **not static**. Our AI recalculates every Monday based on:
+</div>
 
-```
-Weekly Premium = (Expected Loss / Target Loss Ratio) + Risk Loading
+### 📐 Dynamic Pricing Formula
+
+Premiums are **not static**. Our AI recalculates every Monday:
+
+$$
+\text{Weekly Premium} = \frac{\text{Expected Loss}}{\text{Target Loss Ratio}} + \text{Risk Loading}
+$$
 
 Where:
-  Expected Loss = Σ P(trigger_t | zone, week) × E(payout_t | tier)
-  Target Loss Ratio = 62% (portfolio-level)
-  Risk Loading = f(season, zone_risk_score, rider_claim_history)
+
+$$
+\text{Expected Loss} = \sum_{t} P(\text{trigger}_t \mid \text{zone, week}) \times E(\text{payout}_t \mid \text{tier})
+$$
+
+**How Ravi's premium changes across seasons:**
+
+```mermaid
+xychart-beta
+    title "Standard Guard Premium — Seasonal Variation (₹)"
+    x-axis ["Winter (Dec)", "Pre-Monsoon (May)", "Peak Monsoon (Jul)", "Post-Monsoon (Oct)"]
+    y-axis "Premium (₹)" 30 --> 75
+    bar [39, 49, 69, 45]
 ```
 
-**Example: How Ravi's premium changes across seasons**
-
-| Season | Zone Risk Score | Weather Forecast | Premium (Standard) | Rationale |
-|--------|----------------|-----------------|-------------------|-----------|
-| Winter (Dec) | 0.25 | Clear, low AQI | ₹39 | Low disruption probability |
-| Pre-Monsoon (May) | 0.45 | Heatwave advisory | ₹49 | Moderate heat risk |
-| Peak Monsoon (Jul) | 0.72 | Heavy rain forecast | ₹69 | High rain + flood probability |
-| Post-Monsoon (Oct) | 0.35 | Residual rain | ₹45 | Declining risk |
-
-**Affordability Guardrail**: Premium is hard-capped at **0.8% of estimated weekly net income** — ensuring it never becomes unaffordable for the lowest-earning riders.
-
-**Resilience Streak Discount**: If a rider operates 3 consecutive weeks without a disruption claim, their premium decreases by 10% — incentivizing genuine engagement and reducing moral hazard.
+> [!NOTE]
+> **Affordability Guardrail:** Premium is hard-capped at **0.8% of estimated weekly net income** — ensuring it never becomes unaffordable for the lowest-earning riders.
+>
+> **Resilience Streak Discount:** 3 consecutive disruption-free weeks → premium drops by 10%.
 
 ---
 
-## 5. Parametric Triggers — What Fires a Payout
+## ⚡ Parametric Triggers — What Fires a Payout
 
-Every trigger must be: (a) **objectively measurable** via public APIs, (b) **directly correlated with income loss**, and (c) **independently verifiable** to resist fraud.
+> Every trigger must be: **(a)** objectively measurable via public APIs, **(b)** directly correlated with income loss, and **(c)** independently verifiable to resist fraud.
 
-### Trigger Table
+<div align="center">
 
-| # | Trigger | Threshold (Official Indian Standard) | Data Source / API | Income Loss Estimate | Historical Frequency | Anti-Fraud Check |
-|---|---------|--------------------------------------|-------------------|---------------------|---------------------|-----------------|
-| 1 | **Heavy Rainfall** | ≥ 64.5 mm/24hr (IMD "Heavy Rain") | OpenWeatherMap + IMD API (dual-source) | 40-90% of shift income | Mumbai: 15-25 days/monsoon; Bangalore: 5-10 days | GPS in zone + dual-source weather match + active shift proof |
-| 2 | **Extreme Rain / Flooding** | ≥ 204.5 mm/24hr (IMD "Extremely Heavy") OR NDMA Red Alert | NDMA SACHET CAP API + GDACS | 70-100% of daily earnings | Mumbai: ~4 events/year; Chennai: 3-7 events/year | GDACS + IMD + rainfall consensus; geofenced to flood polygons |
-| 3 | **Severe Heatwave** | Max temp ≥ 45°C for ≥ 2 consecutive days (IMD criteria) | OpenWeatherMap + IMD Heatwave Bulletins | 20-40% weekly loss | Delhi: 10-25 days/year; Hyderabad: 8-15 days/year | Shift declaration + local temp threshold match + baseline activity |
-| 4 | **Hazardous Air Quality** | AQI ≥ 401 ("Severe") for 24 continuous hours | WAQI API + CPCB CAAQMS stations (dual-source) | 15-30% weekly loss | Delhi: 30-50 Severe days/winter; Mumbai: up to 28 Poor/VP days | Dual AQI source consensus + location proof + episode cap |
-| 5 | **Platform / Cloud Outage** | Partner-facing API returns HTTP 503/504 for > 15 min across 3+ probes | Synthetic monitoring probes + Downdetector correlation | ~100% for outage duration | Cloudflare Dec 2025 outage paralyzed Blinkit/Zomato/Swiggy | Active session heartbeat required; cross-check with public reports |
-| 6 | **Civil Disruption** | Section 144 / Curfew order active in rider's police jurisdiction for ≥ 4 hours | GDELT Project + NewsAPI + Government gazette feeds | 60-80% of daily income | Multiple incidents 2023-2025; Dec 2025 nationwide gig strike (200K+ workers) | Government order geofence + platform order suspension confirmation |
+| # | Trigger | Threshold | Data Sources | Income Loss | Frequency |
+|:-:|:--------|:----------|:-------------|:----------:|:--------:|
+| 1 | 🌧️ **Heavy Rainfall** | ≥ 64.5 mm/24hr (IMD) | OpenWeatherMap + IMD API | 40-90% | Mumbai: 15-25 days/monsoon |
+| 2 | 🌊 **Extreme Rain / Flooding** | ≥ 204.5 mm/24hr OR NDMA Red Alert | NDMA SACHET + GDACS | 70-100% | Mumbai: ~4 events/year |
+| 3 | 🔥 **Severe Heatwave** | ≥ 45°C for ≥ 2 consecutive days | OpenWeatherMap + IMD Bulletins | 20-40% | Delhi: 10-25 days/year |
+| 4 | 🏭 **Hazardous AQI** | AQI ≥ 401 for 24 continuous hours | WAQI API + CPCB stations | 15-30% | Delhi: 30-50 days/winter |
+| 5 | ☁️ **Platform Outage** | HTTP 503/504 for > 15 min, 3+ probes | Synthetic monitoring + Downdetector | ~100% | Cloudflare Dec 2025 |
+| 6 | 🚨 **Civil Disruption** | Section 144 / Curfew ≥ 4 hours | GDELT + NewsAPI + Gazette feeds | 60-80% | Multiple events 2023-25 |
 
-### Innovative Triggers Most Teams Will Miss
+</div>
 
-**Digital Infrastructure Disruption Index**: Beyond weather, we monitor:
-- **Platform outages** (our synthetic probes + public reporting)
-- **Payment rail failures** (UPI/IMPS downtime affecting payout settlement)
-- **Internet shutdowns** (government-mandated, tracked via GDELT + IP traffic analysis)
+<details>
+<summary><b>🔎 Deep Dive: Why Platform Outage Insurance is our Blue-Ocean Differentiator</b></summary>
 
-This is credible because:
-- Blinkit nationwide outage (Feb 2024) and Swiggy Instamart outage (Oct 2024) are documented
-- The Cloudflare Dec 2025 outage simultaneously killed Blinkit, Zerodha, Groww, and other platforms
+### Digital Infrastructure Disruption Index
+
+Beyond weather, we monitor:
+- **Platform outages** — synthetic probes + public reporting
+- **Payment rail failures** — UPI/IMPS downtime affecting payout settlement
+- **Internet shutdowns** — government-mandated, tracked via GDELT + IP traffic analysis
+
+**This is credible because:**
+- Blinkit nationwide outage (Feb 2024) — documented
+- Swiggy Instamart outage (Oct 2024) — documented
+- Cloudflare Dec 2025 outage → simultaneously killed Blinkit, Zerodha, Groww, and other platforms
 - Human Rights Watch documents that internet shutdowns directly remove access to app-mediated gig work
 
+**No other team will insure digital infrastructure downtime.** This is our unique moat.
+
+</details>
+
 ---
 
-## 6. AI/ML Integration Plan
+## 🧠 AI/ML Engine
 
-### 6.1 Dynamic Premium Pricing Engine
+### 🏷️ 6.1 — Dynamic Premium Pricing
 
-**Architecture**: Tweedie GLM + XGBoost Ensemble
+```mermaid
+flowchart LR
+    A["📊 Feature Space<br><sub>Geospatial, Temporal,<br>Environmental, Behavioral,<br>Integrity signals</sub>"] --> B["📈 Tweedie GLM<br><sub>Actuarial base rate</sub>"]
+    A --> C["🌲 XGBoost<br><sub>Non-linear risk factors</sub>"]
+    B --> D["🔀 Ensemble"]
+    C --> D
+    D --> E["💡 SHAP Explainer<br><sub>Waterfall charts:<br>'Why is your premium ₹X?'</sub>"]
+    E --> F["💰 Personalized<br>Weekly Premium<br><sub>₹29 — ₹89</sub>"]
 
-| Component | Model | Purpose |
-|-----------|-------|---------|
-| Base Rate | Tweedie GLM | Actuarially interpretable base premium |
-| Risk Adjustment | XGBoost Regressor | Non-linear risk factors (zone, season, rider history) |
-| Explainability | SHAP Values | Waterfall charts showing why a premium is ₹X |
+    style D fill:#FF9800,stroke:#fff,color:#fff
+    style F fill:#4CAF50,stroke:#fff,color:#fff
+```
 
-**Feature Space (All measurable in hackathon):**
+<details>
+<summary><b>📋 Complete Feature Space (All measurable in hackathon)</b></summary>
 
 | Category | Features |
-|----------|----------|
-| Geospatial | Rider's operational pincode, H3 cell (Res 7-8), elevation proxy, distance to coast/floodplain |
-| Temporal | Week-of-year, monsoon flag, festival indicator, day-length |
-| Environmental | 7-day weather forecast, trailing AQI averages, seasonal pollution patterns |
-| Rider Behavior | Declared shift window, avg active hours, claim history, "online but stationary" ratio |
-| Integrity | Device attestation status, GPS accuracy radius, spoof-risk score |
+|:---------|:---------|
+| **Geospatial** | Rider's operational pincode, H3 cell (Res 7-8), elevation proxy, distance to coast/floodplain |
+| **Temporal** | Week-of-year, monsoon flag, festival indicator, day-length |
+| **Environmental** | 7-day weather forecast, trailing AQI averages, seasonal pollution patterns |
+| **Rider Behavior** | Declared shift window, avg active hours, claim history, "online but stationary" ratio |
+| **Integrity** | Device attestation status, GPS accuracy radius, spoof-risk score |
 
-**Output**: Personalized weekly premium constrained to ₹29-₹89 range.
+</details>
 
-### 6.2 Intelligent Fraud Detection (4-Layer Pipeline)
+### 🛡️ 6.2 — Intelligent Fraud Detection (4-Layer Pipeline)
 
-**Layer 1 — Real-Time Telemetry Validation (Isolation Forest)**
-- Cross-references GPS coordinates against Wi-Fi BSSIDs, cell tower triangulation, and IP geolocation
-- Detects "impossible travel" (device teleporting 15km in 2 seconds) and VPN routing
-- Catches basic GPS spoofing within sub-seconds
+```mermaid
+flowchart TD
+    subgraph "⚡ LAYER 1 — Real-Time Telemetry"
+        L1["🔍 Isolation Forest<br><sub>GPS × Wi-Fi × Cell Tower × IP</sub><br><sub>Catches spoofing in sub-seconds</sub>"]
+    end
 
-**Layer 2 — Behavioral Anomaly Detection (Autoencoder + LSTM)**
-- Autoencoder architecture: Input → 64 → 32 → 16 → 32 → 64 → Output
-- Trained on legitimate claim patterns; high reconstruction error = anomaly
-- LSTM analyzes accelerometer/gyroscope time-series: a rider "trapped in flood" whose sensor data shows them sitting motionless indoors for hours gets flagged
+    subgraph "🧠 LAYER 2 — Behavioral Anomaly"
+        L2["📊 Autoencoder + LSTM<br><sub>Accelerometer/gyroscope time-series</sub><br><sub>High reconstruction error = anomaly</sub>"]
+    end
 
-**Layer 3 — Network Collusion Analysis (Graph Neural Networks)**
-- Builds a graph: nodes = riders, edges = shared device IDs, IP subnets, bank accounts, referral codes
-- Louvain community detection identifies suspicious clusters
-- If 40 riders sharing the same IP subnet simultaneously claim from the same zone → syndicate alert
+    subgraph "🕸️ LAYER 3 — Network Collusion"
+        L3["🔗 Graph Neural Networks<br><sub>Louvain community detection</sub><br><sub>40 riders on same IP = syndicate</sub>"]
+    end
 
-**Layer 4 — Historical Cross-Referencing (XGBoost Classifier)**
-- Final arbiter: checks that IMD weather data, CPCB AQI data, GDACS alerts, and TomTom traffic data ALL reflect the claimed disruption
-- Multi-source consensus required — a "rainstorm" claim with no corresponding IMD/OpenWeather data = rejected
+    subgraph "✅ LAYER 4 — Cross-Reference"
+        L4["🌲 XGBoost Classifier<br><sub>IMD + CPCB + GDACS + TomTom</sub><br><sub>Multi-source consensus required</sub>"]
+    end
 
-### 6.3 Predictive Risk Engine (Competitive Moat)
+    L1 --> L2 --> L3 --> L4
+    L4 --> RESULT{"Authenticity<br>Score"}
 
-**Purpose**: Forecast next week's disruption probability per H3 zone — enabling proactive premium adjustment and rider alerts.
+    style L1 fill:#2196F3,stroke:#fff,color:#fff
+    style L2 fill:#9C27B0,stroke:#fff,color:#fff
+    style L3 fill:#FF5722,stroke:#fff,color:#fff
+    style L4 fill:#4CAF50,stroke:#fff,color:#fff
+    style RESULT fill:#FF9800,stroke:#fff,color:#fff
+```
 
-**Architecture**: LSTM (48-hour lookback, 7 features, 2 layers of 64+32 units) + XGBoost ensemble
+### 🔮 6.3 — Predictive Risk Engine (Competitive Moat)
 
-**Inputs**: Multi-model weather forecasts, seasonal climatology, historical trigger counts, AQI seasonal signals, NDMA alert patterns
+<table>
+<tr>
+<td width="50%">
+
+**Architecture:** LSTM (48-hour lookback, 7 features, 2 layers of 64+32 units) + XGBoost ensemble
+
+**Inputs:** Multi-model weather forecasts, seasonal climatology, historical trigger counts, AQI patterns, NDMA alerts
+
+</td>
+<td width="50%">
 
 **Two strategic outputs:**
-1. **Underwriting discipline** — premiums adjust BEFORE monsoon spikes, protecting the loss ratio
-2. **Preventive intelligence alerts** — when the model forecasts 44°C tomorrow, push a WhatsApp alert: *"Heatwave expected in your zone tomorrow. Your income protection auto-activates. Consider the evening shift instead."*
 
-**Preventive Payouts (Unicorn Feature)**: If severe heat is predicted 48 hours ahead, auto-disburse ₹50 to the rider's wallet earmarked for ORS (Oral Rehydration Salts) and water. By investing ₹50 proactively, we prevent the much larger ₹600 loss-of-income claim — transforming insurance from reactive to proactive.
+1. 📈 **Underwriting discipline** — premiums adjust BEFORE monsoon spikes, protecting the loss ratio
+
+2. 🔔 **Preventive intelligence alerts** — WhatsApp: *"Heatwave expected in your zone tomorrow. Consider the evening shift."*
+
+</td>
+</tr>
+</table>
+
+> [!IMPORTANT]
+> **🦄 Unicorn Feature — Preventive Payouts**
+>
+> If severe heat is predicted **48 hours ahead**, auto-disburse **₹50** to the rider's wallet earmarked for ORS (Oral Rehydration Salts) and water.
+>
+> By investing ₹50 proactively, we **prevent** the much larger ₹600 claim — transforming insurance from **reactive to proactive**.
+>
+> *This is insurance reimagined. Not just paying after disaster — preventing the loss entirely.*
 
 ---
 
-## 7. Adversarial Defense & Anti-Spoofing Strategy
+## 🛡️ Adversarial Defense & Anti-Spoofing Strategy
 
-> *Market Crash Compliance: Addressing the coordinated GPS-spoofing syndicate of 500 delivery workers exploiting parametric insurance via fake locations while resting at home.*
+> [!WARNING]
+> **Market Crash Scenario:** 500 delivery workers coordinate via Telegram, install GPS-spoofing apps, fake locations into a red-alert weather zone while resting at home — attempting to drain the liquidity pool.
+>
+> **Our response: GPS is only 10% of our authenticity score.** We have 6 other signals they can't fake.
 
-### 7.1 The Differentiation — Genuine Worker vs. Bad Actor
+### 7-Signal Authenticity Scoring Matrix
 
-Simple GPS verification is dead. A spoofed GPS coordinate is indistinguishable from a real one at the data layer. Our system therefore **never trusts GPS alone** — it builds a **multi-signal authenticity score** from orthogonal data sources that are progressively harder to fake simultaneously.
-
-**The Authenticity Scoring Matrix:**
+<div align="center">
 
 | Signal | What It Detects | Why Spoofers Can't Fake It | Weight |
-|--------|----------------|---------------------------|--------|
-| **GPS Coordinates** | Basic location | Easily spoofed — baseline only | 10% |
-| **Wi-Fi BSSID Fingerprint** | Nearby Wi-Fi networks visible to device | Spoofing GPS doesn't change which Wi-Fi routers your phone can see. A rider "in Andheri" whose device sees only home Wi-Fi SSIDs from Thane is caught. | 20% |
-| **Cell Tower ID (CID/LAC)** | Which cell towers the device connects to | Cell tower IDs are hardware-level; GPS spoofing apps don't alter cellular connections. A rider claiming to be in Zone A but connected to a tower 12km away in Zone B is flagged. | 20% |
-| **IP Geolocation** | Approximate location via ISP routing | If device GPS says "flood zone in Andheri" but IP resolves to a residential ISP in Thane, the signals disagree. | 10% |
-| **Accelerometer + Gyroscope** | Physical motion patterns | A genuinely stranded rider shows micro-movements (standing, walking to shelter, adjusting phone). A rider at home shows flat-line sedentary patterns. LSTM-based kinematic profiling detects this. | 20% |
-| **Barometric Pressure Sensor** | Altitude + weather correlation | During a genuine rainstorm, barometric pressure drops measurably. A spoofer's phone in a dry apartment registers normal indoor pressure — inconsistent with the claimed "severe weather zone." | 10% |
-| **Network Latency Pattern** | Connection quality fingerprint | Genuine bad-weather zones show degraded cellular signal quality (increased jitter, packet loss). A spoofer on stable home Wi-Fi shows pristine network metrics — contradicting the "stranded in storm" narrative. | 10% |
+|:------:|:---------------|:--------------------------|:------:|
+| 📍 **GPS** | Basic location | Easily spoofed — baseline only | **10%** |
+| 📶 **Wi-Fi BSSID** | Nearby Wi-Fi networks | Spoofing GPS doesn't change which routers your phone sees | **20%** |
+| 📡 **Cell Tower ID** | Tower connections | Hardware-level; GPS apps don't alter cellular connections | **20%** |
+| 🌐 **IP Geolocation** | ISP routing location | GPS says "Andheri" but IP resolves to "Thane" = caught | **10%** |
+| 📳 **Accelerometer** | Physical motion | Stranded rider shows micro-movements; home rider = flatline | **20%** |
+| 🌡️ **Barometric Pressure** | Altitude + weather | Real rainstorm = pressure drops; dry apartment = normal | **10%** |
+| 📊 **Network Latency** | Connection quality | Storm zones show degraded signal; home Wi-Fi = pristine | **10%** |
 
-**Composite Authenticity Score**: Each claim receives a score from 0-100. The system auto-approves above 75, flags for review between 45-75, and auto-rejects below 45.
-
-**How this catches the 500-rider syndicate**: Even if all 500 spoof GPS perfectly, they CANNOT simultaneously fake:
-- Wi-Fi BSSIDs matching the target zone's routers
-- Cell tower connections to towers in the claimed zone
-- Barometric pressure drops consistent with a rainstorm
-- Accelerometer patterns of a rider outdoors in rain
-- Degraded network latency matching storm conditions
-
-The multi-signal approach ensures that **faking even 3 of 7 signals requires physical presence** — at which point the rider isn't faking.
-
-### 7.2 The Data — Detecting a Coordinated Fraud Ring
-
-Beyond individual spoofing detection, the 500-rider syndicate scenario requires **network-level pattern analysis**:
-
-**Graph-Based Collusion Detection:**
+</div>
 
 ```
-Rider Nodes ──── Edges (Suspicious Connections) ──── Community Detection
-    │                                                        │
-    ├── Shared Device ID / IMEI                              │
-    ├── Same IP Subnet (home Wi-Fi)                          ├── Louvain Algorithm
-    ├── Shared Bank Account / UPI VPA                        ├── Label Propagation
-    ├── Co-registration within 48 hours                      └── Anomaly Score
-    ├── Identical referral chain
-    └── Simultaneous claim timestamps (< 60 sec spread)
+    Composite Authenticity Score: 0 ──────────────────────────── 100
+
+    ❌ AUTO-REJECT     🔍 MANUAL REVIEW     ⏳ ESCROW      ✅ AUTO-APPROVE
+    ├─────────────────┤├──────────────────┤├─────────────┤├───────────────┤
+    0                 24                  44             75              100
 ```
 
-**Syndicate Detection Signals:**
+<details>
+<summary><b>🕸️ How We Catch the 500-Rider Syndicate</b></summary>
 
-| Signal | Normal Pattern | Fraud Ring Pattern | Detection Method |
-|--------|---------------|-------------------|-----------------|
-| Claim timing | Spread across hours | 500 claims within 60-second window | Statistical burst detection |
-| IP addresses | Diverse ISPs/locations | Cluster on same subnet | IP entropy analysis |
-| Device fingerprints | Unique per rider | Shared IMEI/device IDs, app cloners | Device fingerprint hashing |
-| Referral chains | Organic, varied | Linear chain from single source | Graph depth analysis |
-| Claim-to-registration ratio | Claims after weeks of activity | Claims within days of signup | Velocity scoring |
-| Geographic clustering | Diverse dark stores | All "in" same 500m radius | Spatial density anomaly |
-| Behavioral similarity | Varied shift patterns | Identical login/logout times | Time-series correlation |
+### Graph-Based Collusion Detection
 
-**The Telegram Coordination Signal**: If 500 riders all submit claims from the "same zone" within a 60-second window — and their cell tower data shows they're actually in 200+ different locations — the system flags the entire cluster. A genuine weather event causes claims to trickle in over 30-60 minutes as different riders are progressively affected. Instantaneous mass claims are a statistical impossibility in organic disruption.
+```mermaid
+flowchart LR
+    subgraph "Rider Network Graph"
+        R1["Rider A"] --- R2["Rider B"]
+        R2 --- R3["Rider C"]
+        R1 --- R3
+        R3 --- R4["Rider D"]
+        R4 --- R5["Rider E"]
+    end
 
-### 7.3 The UX Balance — Protecting Honest Workers
+    subgraph "Suspicious Edges"
+        E1["Same IP Subnet"]
+        E2["Shared Device ID"]
+        E3["Same Bank Account"]
+        E4["Co-registration < 48hrs"]
+        E5["Claims within 60 sec"]
+    end
 
-The hardest challenge: **how do you catch 500 fraudsters without rejecting the 1 genuine rider who has a dead GPS signal in a real storm?**
+    subgraph "Detection"
+        D1["🔍 Louvain Algorithm"]
+        D2["📊 Label Propagation"]
+        D3["⚠️ Anomaly Score"]
+    end
 
-**Graduated Response Protocol (Never Binary):**
+    R1 -.-> E1
+    R2 -.-> E2
+    R3 -.-> E3
+    E1 --> D1
+    E2 --> D2
+    E3 --> D3
+```
 
-| Authenticity Score | Action | Rider Experience |
-|-------------------|--------|-----------------|
-| **75-100** (High Confidence) | Auto-approve, instant payout | *"₹300 credited to your account. Stay safe!"* |
-| **45-74** (Medium Confidence) | Payout held in escrow (2 hours), enhanced verification | *"Your claim is being processed. We'll confirm within 2 hours."* + Request for optional selfie-in-rain or screenshot of delivery app showing "zone paused" |
-| **25-44** (Low Confidence) | Manual review queue (24 hours) | *"We need a bit more time to verify conditions in your area. You'll hear from us within 24 hours."* |
-| **0-24** (Fraud Likely) | Soft block + investigation | *"We couldn't verify the disruption in your area. If this is an error, tap here to request a review."* |
+| Signal | Normal Pattern | 🚨 Fraud Ring Pattern | Detection |
+|:-------|:--------------|:---------------------|:----------|
+| Claim timing | Spread across hours | 500 claims in 60-second window | Burst detection |
+| IP addresses | Diverse ISPs | Same subnet cluster | Entropy analysis |
+| Device fingerprints | Unique per rider | Shared IMEI/cloned apps | Hash collision |
+| Referral chains | Organic, varied | Linear chain from 1 source | Graph depth analysis |
+| Claim-to-registration | Claims after weeks | Claims within days of signup | Velocity scoring |
 
-**Critical UX Principles:**
+**The Telegram Tell:** 500 riders claiming from the "same zone" within 60 seconds — but cell tower data shows they're in 200+ different locations. A genuine weather event causes claims to trickle over 30-60 minutes. Instantaneous mass claims are a **statistical impossibility** in organic disruption.
 
-1. **Never punish network drops**: If a rider's phone loses connectivity during a genuine storm (a common scenario), they shouldn't be penalized for missing telemetry data. The system uses **last-known-good location** + **zone-level disruption confirmation** to bridge data gaps. If weather APIs confirm heavy rain in the rider's last-known zone, the claim proceeds.
+</details>
 
-2. **Benefit-of-the-doubt buffer**: First-time flagged riders with clean history (>4 weeks of legitimate activity, no prior flags) receive payouts with a soft flag rather than a hold. Trust is earned and tracked.
+<details>
+<summary><b>⚖️ UX Balance — Protecting Honest Workers</b></summary>
 
-3. **Appeal mechanism**: Every rejected or held claim includes a one-tap "Request Review" button. A human reviewer (in production) or escalation queue (in hackathon) examines the evidence bundle. Wrongful rejections are compensated with a 10% bonus payout.
+### Graduated Response Protocol
 
-4. **Transparency**: Riders can view their own "Trust Score" (simplified, 3 levels: Trusted / Verified / New) and understand that maintaining consistent, genuine usage improves their score over time.
+| Score | Action | Rider Sees |
+|:-----:|:-------|:-----------|
+| **75-100** ✅ | Auto-approve, instant payout | *"₹300 credited. Stay safe! 🌂"* |
+| **45-74** ⏳ | Escrow hold (2 hrs), enhanced verification | *"Processing. Confirmed within 2 hours."* + optional selfie/screenshot |
+| **25-44** 🔍 | Manual review (24 hrs) | *"We need more time to verify. You'll hear within 24 hours."* |
+| **0-24** ❌ | Soft block + investigation | *"Couldn't verify disruption. Tap to request review."* |
 
-5. **Syndicate isolation, not collateral damage**: When a fraud ring is detected, only the graph-connected cluster is suspended. Other riders in the same geographic zone who are NOT part of the network continue receiving payouts normally. The system punishes the network, not the neighborhood.
+**Critical Principles:**
+1. **Never punish network drops** — use last-known-good location + zone-level disruption confirmation
+2. **Benefit-of-the-doubt** — clean-history riders get payouts with soft flag, not hold
+3. **Appeal mechanism** — one-tap "Request Review" + 10% bonus for wrongful rejections
+4. **Syndicate isolation** — punish the network, not the neighborhood
+
+</details>
 
 ---
 
-## 8. Zero-Touch Claims — The User Experience
+## 📱 Zero-Touch Claims — The User Experience
 
-### Onboarding (3 Screens, < 60 Seconds)
+### Onboarding: 3 Screens, < 60 Seconds
 
-**Screen 1 — "Protect This Week's Earnings"**
-- Auto-detect city and zone via GPS
-- OTP login (mobile number)
-- Language selection (Hindi, English, Kannada, Tamil, Telugu, Marathi)
-- One toggle: "I mostly work evenings/nights"
+```mermaid
+flowchart LR
+    S1["📍 Screen 1<br><b>Protect This Week</b><br><sub>Auto-detect city/zone<br>OTP login<br>Language select</sub>"] --> S2["🛡️ Screen 2<br><b>Pick Your Shield</b><br><sub>Basic / Standard / Pro<br>No insurance jargon<br>Social proof</sub>"] --> S3["💸 Screen 3<br><b>Payout Setup</b><br><sub>UPI ID / bank account<br>AutoPay mandate<br>'You're Protected' ✅</sub>"]
 
-**Screen 2 — Coverage Selection (No Insurance Jargon)**
-- Three cards: Basic / Standard / Pro
-- Each shows: "Covers up to ₹600 / ₹1,200 / ₹2,000 lost income per week — from ₹29/week"
-- Social proof: *"82% of riders in Koramangala chose Standard Guard this week"*
-- Plain explanation: "If heavy rain, severe pollution, or app outage happens in your area during your shift, we pay automatically. No forms. No calls."
-
-**Screen 3 — Payout Setup**
-- Enter UPI ID or bank account
-- UPI AutoPay mandate (single biometric confirmation)
-- *"You're Protected"* badge with coverage dates (Mon-Sun)
-
-### Claims Flow (Completely Invisible to Rider)
-
-```
-Disruption Occurs (e.g., rainfall > 64.5mm)
-         │
-         ▼
-Trigger Engine detects via dual-source API polling (every 5 min)
-         │
-         ▼
-Policy DB query: which riders have active coverage in affected H3 zone?
-         │
-         ▼
-Fraud Pipeline: 4-layer authenticity scoring (< 2 min)
-         │
-         ▼
-Score ≥ 75 ──▶ Auto-approve ──▶ RazorpayX UPI Payout ──▶ WhatsApp notification
-Score 45-74 ──▶ Escrow hold ──▶ Enhanced verification (2 hrs) ──▶ Resolve
-Score < 45 ──▶ Flag + review ──▶ Manual queue (24 hrs) ──▶ Appeal available
+    style S1 fill:#4CAF50,stroke:#fff,color:#fff
+    style S2 fill:#2196F3,stroke:#fff,color:#fff
+    style S3 fill:#9C27B0,stroke:#fff,color:#fff
 ```
 
-**Target Latency**: Disruption → Money-in-account: **< 30 minutes** for auto-approved claims.
+### Claims Flow — Completely Invisible to Rider
 
----
+> **Target:** Disruption → Money-in-account: **< 30 minutes** for auto-approved claims.
 
-## 9. Platform Choice — Web vs Mobile
+```mermaid
+stateDiagram-v2
+    [*] --> DisruptionOccurs: 🌧️ Weather / ☁️ Outage / 🚨 Curfew
+    DisruptionOccurs --> TriggerDetected: Dual-source API polling (every 5 min)
+    TriggerDetected --> PolicyQuery: Which riders are covered in this H3 zone?
+    PolicyQuery --> FraudPipeline: 4-layer authenticity scoring (< 2 min)
+    FraudPipeline --> AutoApprove: Score ≥ 75
+    FraudPipeline --> EscrowHold: Score 45-74
+    FraudPipeline --> ManualReview: Score < 45
+    AutoApprove --> UPIPayout: 💸 RazorpayX instant transfer
+    UPIPayout --> WhatsAppNotify: 📱 "₹300 credited. Stay safe!"
+    EscrowHold --> EnhancedVerification: 2-hour review window
+    ManualReview --> AppealQueue: 24-hour review + appeal option
+    WhatsAppNotify --> [*]
+```
 
-### Decision: Mobile-First PWA + WhatsApp Integration
+### Platform Architecture
 
 | Audience | Platform | Why |
-|----------|----------|-----|
-| **Riders** | Progressive Web App (PWA) + WhatsApp Bot | Zero-install, works on low-end Android, no Play Store friction. WhatsApp has 500M+ Indian users — notifications land where riders already live. |
-| **Insurers / Admin** | Web Dashboard | Loss ratio monitoring, fraud analytics, trigger feed, premium volume — judges see the business intelligence layer. |
-
-**Why PWA over Native App:**
-- No 50MB download for a storage-constrained phone
-- Instant updates without app store approval cycles
-- Works offline for basic coverage status display
-- Sharable via WhatsApp link (viral distribution among rider groups)
-
-**WhatsApp Integration via Cloud API:**
-- Onboarding flow can run entirely in WhatsApp (1,000 free service conversations/month)
-- Claim notifications delivered as rich WhatsApp messages
-- Policy renewal reminders with one-tap payment links
-- Multi-language support via India's Bhashini API (government-built, free)
+|:--------:|:--------:|:----|
+| 🛵 **Riders** | PWA + WhatsApp Bot | Zero-install, works on low-end Android, 500M+ Indian WhatsApp users |
+| 📊 **Insurers** | Web Dashboard | Loss ratios, fraud analytics, trigger feed, premium volume |
 
 ---
 
-## 10. Tech Stack & Architecture
+## 🏗️ Tech Stack & Architecture
 
 ### System Architecture
 
+```mermaid
+flowchart TB
+    subgraph FRONTEND["🖥️ FRONTEND LAYER"]
+        F1["⚛️ React PWA<br><sub>Rider App + Tailwind</sub>"]
+        F2["📊 React Dashboard<br><sub>Admin + Deck.gl + H3</sub>"]
+        F3["💬 WhatsApp<br><sub>Cloud API</sub>"]
+    end
+
+    subgraph API["⚡ API GATEWAY — FastAPI"]
+        A1["🔐 Auth"]
+        A2["📋 Policy Mgmt"]
+        A3["💰 Premium Engine"]
+        A4["📝 Claims"]
+        A5["💸 Payouts"]
+    end
+
+    subgraph ML["🧠 ML SERVICES — Python"]
+        M1["📈 XGBoost + LightGBM<br><sub>Pricing engine</sub>"]
+        M2["🔮 LSTM<br><sub>Predictive risk</sub>"]
+        M3["💡 SHAP<br><sub>Explainability</sub>"]
+    end
+
+    subgraph TRIGGER["📡 TRIGGER ENGINE"]
+        T1["🔄 API Poller"]
+        T2["📨 Redis Streams"]
+    end
+
+    subgraph FRAUD["🛡️ FRAUD PIPELINE"]
+        FR1["🔍 Isolation Forest"]
+        FR2["📊 Autoencoder"]
+        FR3["🕸️ GNN (Louvain)"]
+        FR4["🌲 XGBoost"]
+    end
+
+    subgraph DATA["💾 DATA LAYER"]
+        D1["🐘 PostgreSQL<br><sub>+ PostGIS + h3-pg</sub>"]
+        D2["⚡ Redis<br><sub>Real-time cache</sub>"]
+    end
+
+    subgraph EXTERNAL["🌐 EXTERNAL APIs"]
+        E1["🌤️ OpenWeatherMap"]
+        E2["🏭 WAQI / CPCB"]
+        E3["🌊 NDMA SACHET"]
+        E4["📰 GDELT / NewsAPI"]
+        E5["💸 RazorpayX"]
+        E6["💬 WhatsApp API"]
+    end
+
+    FRONTEND --> API
+    API --> ML
+    API --> TRIGGER
+    API --> FRAUD
+    ML --> DATA
+    TRIGGER --> DATA
+    FRAUD --> DATA
+    TRIGGER --> EXTERNAL
+    API --> EXTERNAL
 ```
-┌─────────────────────────────────────────────────────────────────┐
-│                        FRONTEND LAYER                           │
-│  React PWA (Rider App)  │  React Dashboard (Admin/Insurer)      │
-│  WhatsApp Cloud API     │  Deck.gl + H3 Risk Visualization      │
-└──────────────────────────┬──────────────────────────────────────┘
-                           │
-┌──────────────────────────┴──────────────────────────────────────┐
-│                      API GATEWAY (FastAPI)                       │
-│  Auth │ Policy Mgmt │ Premium Engine │ Claims │ Payouts │ Admin │
-└──────────────────────────┬──────────────────────────────────────┘
-                           │
-        ┌──────────────────┼──────────────────┐
-        ▼                  ▼                  ▼
-┌──────────────┐  ┌──────────────┐  ┌──────────────────────┐
-│  ML Services │  │ Trigger Engine│  │  Fraud Detection     │
-│  (Python)    │  │ (Event-Driven)│  │  Pipeline            │
-│              │  │              │  │                      │
-│ • XGBoost    │  │ • API Poller │  │ • Isolation Forest   │
-│ • LightGBM   │  │ • Kafka/     │  │ • Autoencoder        │
-│ • LSTM       │  │   Redis      │  │ • GNN (Louvain)      │
-│ • SHAP       │  │   Streams    │  │ • XGBoost Classifier │
-└──────────────┘  └──────────────┘  └──────────────────────┘
-                           │
-┌──────────────────────────┴──────────────────────────────────────┐
-│                        DATA LAYER                               │
-│  PostgreSQL + PostGIS + h3-pg  │  Redis (real-time cache)       │
-│  (Policies, Claims, Audit)     │  (Zone risk scores, sessions)  │
-└──────────────────────────┬──────────────────────────────────────┘
-                           │
-┌──────────────────────────┴──────────────────────────────────────┐
-│                    EXTERNAL INTEGRATIONS                         │
-│  OpenWeatherMap │ WAQI/CPCB │ NDMA SACHET │ GDELT │ RazorpayX  │
-│  IMD API        │ OpenAQ    │ GDACS      │ NewsAPI│ WhatsApp   │
-└─────────────────────────────────────────────────────────────────┘
-```
 
-### Tech Stack Summary
+### Tech Stack at a Glance
 
-| Layer | Technology | Why This Choice |
-|-------|-----------|----------------|
-| **Frontend (Rider)** | React + Tailwind CSS (PWA) | Fast, mobile-first, installable, offline-capable |
-| **Frontend (Admin)** | React + Deck.gl + H3 | H3 hexagonal risk maps rendered beautifully in WebGL |
-| **Backend** | Python FastAPI | Async, high-performance, native ML ecosystem integration |
-| **ML/AI** | XGBoost, LightGBM, scikit-learn, PyTorch (LSTM/Autoencoder) | Gradient boosting for tabular pricing; PyTorch for sequence models |
-| **Explainability** | SHAP | Waterfall charts showing premium breakdown — satisfies judges + IRDAI |
-| **Database** | PostgreSQL + PostGIS + h3-pg | Geospatial queries on H3 grids, ACID compliance for financial records |
-| **Cache** | Redis | Real-time zone risk scores, rate limiting, session management |
-| **Event Streaming** | Redis Streams (hackathon) / Kafka (production) | Lightweight event-driven trigger processing |
-| **Payments** | RazorpayX (Test Mode) | UPI payouts with idempotency; sandbox for demo |
-| **Notifications** | WhatsApp Cloud API | 500M+ Indian users; rich message templates |
-| **Monitoring** | OpenTelemetry + Grafana | Observability for trigger latency and system health |
-| **Deployment** | Docker + Railway/Render (free tier) | Fast deployment, zero infrastructure management |
+<div align="center">
 
-### External APIs (All Free/Freemium)
+| Layer | Technology | Why |
+|:-----:|:----------:|:----|
+| **Frontend** | ![React](https://img.shields.io/badge/React-PWA-61DAFB?style=flat-square&logo=react&logoColor=black) ![Tailwind](https://img.shields.io/badge/Tailwind-CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white) | Fast, mobile-first, offline-capable |
+| **Admin** | ![React](https://img.shields.io/badge/React-Dashboard-61DAFB?style=flat-square&logo=react&logoColor=black) ![Deck.gl](https://img.shields.io/badge/Deck.gl-H3_Maps-000?style=flat-square) | H3 hexagonal risk maps in WebGL |
+| **Backend** | ![FastAPI](https://img.shields.io/badge/FastAPI-Python-009688?style=flat-square&logo=fastapi&logoColor=white) | Async, high-performance, ML-native |
+| **ML/AI** | ![XGBoost](https://img.shields.io/badge/XGBoost-F7931E?style=flat-square) ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white) | Gradient boosting + deep learning |
+| **Database** | ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-PostGIS-4169E1?style=flat-square&logo=postgresql&logoColor=white) | Geospatial + ACID for financial records |
+| **Cache** | ![Redis](https://img.shields.io/badge/Redis-Streams-DC382D?style=flat-square&logo=redis&logoColor=white) | Real-time zone scores + event streaming |
+| **Payments** | ![Razorpay](https://img.shields.io/badge/RazorpayX-UPI-0C2451?style=flat-square) | Instant UPI payouts with idempotency |
+| **Messaging** | ![WhatsApp](https://img.shields.io/badge/WhatsApp-Cloud_API-25D366?style=flat-square&logo=whatsapp&logoColor=white) | 500M+ Indian users |
+| **Monitoring** | ![Grafana](https://img.shields.io/badge/Grafana-F46800?style=flat-square&logo=grafana&logoColor=white) | Trigger latency + system health |
+| **Deploy** | ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white) ![Railway](https://img.shields.io/badge/Railway-0B0D0E?style=flat-square&logo=railway&logoColor=white) | Zero-infrastructure management |
+
+</div>
+
+<details>
+<summary><b>📡 External APIs — All Free/Freemium Tier</b></summary>
 
 | API | Free Tier | Use Case |
-|-----|-----------|----------|
-| OpenWeatherMap One Call 3.0 | 1,000 calls/day | Precipitation, temperature, severe weather alerts |
-| WeatherAPI.com | 1M calls/month | Backup weather source, built-in AQI |
+|:----|:----------|:---------|
+| OpenWeatherMap 3.0 | 1,000 calls/day | Precipitation, temperature, severe alerts |
+| WeatherAPI.com | 1M calls/month | Backup weather + built-in AQI |
 | WAQI (aqicn.org) | 1,000 req/sec | Real-time AQI from CPCB stations |
-| OpenAQ v3 | Unlimited | Historical air quality data for model training |
+| OpenAQ v3 | Unlimited | Historical air quality for model training |
 | NDMA SACHET | Free (RSS/JSON) | Cyclone, flood, earthquake CAP alerts |
-| GDACS | Free (RSS, 6-min updates) | International disaster alerts, flood severity |
+| GDACS | Free (6-min updates) | International disaster alerts, flood severity |
 | GDELT Project | Free (BigQuery) | Civil disruption, protest, curfew detection |
-| NewsAPI | 100 req/day (free) | Strike/curfew news corroboration |
-| RazorpayX | Test mode (free) | UPI payout simulation with idempotency |
-| WhatsApp Cloud API | 1,000 conversations/month | Rider notifications and onboarding |
+| NewsAPI | 100 req/day | Strike/curfew news corroboration |
+| RazorpayX | Test mode (free) | UPI payout simulation |
+| WhatsApp Cloud API | 1,000 conv/month | Notifications + onboarding |
+
+</details>
 
 ---
 
-## 11. Financial Viability — Unit Economics
+## 📊 Financial Viability — Unit Economics
 
-### Sample Weekly P&L — 10,000 Riders
+### Weekly P&L — 10,000 Riders
 
-**Tier Mix Assumption**: 50% Basic, 35% Standard, 15% Pro
+```mermaid
+pie title Premium Collection by Tier (Weekly)
+    "🟢 Basic Shield (5,000 × ₹29)" : 145000
+    "🔵 Standard Guard (3,500 × ₹49)" : 171500
+    "🟣 Pro Armor (1,500 × ₹89)" : 133500
+```
 
-| Tier | Riders | Weekly Premium | Weekly Collection |
-|------|--------|---------------|-------------------|
-| Basic Shield | 5,000 | ₹29 | ₹1,45,000 |
-| Standard Guard | 3,500 | ₹49 | ₹1,71,500 |
-| Pro Armor | 1,500 | ₹89 | ₹1,33,500 |
-| **Total** | **10,000** | — | **₹4,50,000** |
+<div align="center">
 
-**Expected Weekly Claims (Normal Season)**
+| | Collection | Claims | Loss Ratio |
+|:-|:---------:|:------:|:----------:|
+| 🟢 Basic (50%) | ₹1,45,000 | ₹75,000 | 51.7% |
+| 🔵 Standard (35%) | ₹1,71,500 | ₹1,57,500 | 91.8% |
+| 🟣 Pro (15%) | ₹1,33,500 | ₹1,50,000 | 112.4% |
+| **📊 Portfolio** | **₹4,50,000** | **₹2,82,500** | **62.8%** ✅ |
 
-| Tier | Trigger Probability | Avg Payout | Expected Claims |
-|------|-------------------|------------|----------------|
-| Basic | 10% | ₹150 | ₹75,000 |
-| Standard | 15% | ₹300 | ₹1,57,500 |
-| Pro | 20% | ₹500 | ₹1,50,000 |
-| **Total** | — | — | **₹2,82,500** |
+</div>
 
-**Loss Ratio**: ₹2,82,500 / ₹4,50,000 = **62.8%** (within target range of 60-65%)
+> **Target Loss Ratio: 60-65%** — our 62.8% sits right in the sweet spot.
 
-**Weekly Gross Margin**: ₹1,67,500 — covers technology costs, API subscriptions, and operations.
+### 🦄 Key Metrics
 
-### Monsoon Stress Test
+<div align="center">
+
+| Metric | Value | Benchmark |
+|:-------|:-----:|:---------:|
+| **Customer Acquisition Cost** | ₹45 | WhatsApp referrals + dark-store partnerships |
+| **Average Weekly Premium** | ₹45 | Blended across tiers |
+| **Average Retention** | 26 weeks | Conservative (65% annual gig attrition) |
+| **Lifetime Value (LTV)** | **₹435** | $45 × 26 × (1 - 0.628)$ |
+| **LTV / CAC Ratio** | **9.7x** | Benchmark: > 3x is venture-scale |
+| **Break-even Subscribers** | **~5,000** | Achievable in first 3 months |
+
+</div>
+
+<details>
+<summary><b>🌧️ Monsoon Stress Test</b></summary>
 
 During peak monsoon, trigger probability rises to 25-35%. The dynamic pricing engine responds:
-- Premium auto-adjusts upward (Standard: ₹49 → ₹69 for high-risk zones)
-- Episode caps limit consecutive payouts (max 4 disruption windows/week)
-- Winter-month surplus funds a smart-reserve pool to subsidize monsoon payouts
 
-### Unit Economics
+1. **Premium auto-adjusts** — Standard: ₹49 → ₹69 for high-risk zones
+2. **Episode caps** — max 4 disruption windows/week
+3. **Smart-reserve pool** — winter surplus funds monsoon payouts
 
-| Metric | Value |
-|--------|-------|
-| Customer Acquisition Cost (CAC) | ₹45 (WhatsApp referral loops + dark-store partnerships) |
-| Average Weekly Premium (blended) | ₹45 |
-| Average Retention | 26 weeks (conservative, given 65% annual gig attrition) |
-| Lifetime Value (LTV) | ₹45 × 26 × (1 - 0.628) = **₹435** |
-| **LTV / CAC Ratio** | **9.7x** (benchmark: >3x is venture-scale) |
-| Break-even Subscribers | ~5,000 active riders |
+</details>
 
 ---
 
-## 12. Development Roadmap (Phase 2 & 3)
+## 🗺️ Development Roadmap
 
-### Phase 2: Automation & Protection (Weeks 3-4, Mar 21 - Apr 4)
+### Phase 2: Automation & Protection <sub>Mar 21 - Apr 4</sub>
+
 - [ ] Registration and onboarding flow (3-screen PWA)
 - [ ] Insurance policy management (CRUD + weekly renewal engine)
 - [ ] Dynamic premium calculation (XGBoost pricing model)
@@ -584,45 +763,129 @@ During peak monsoon, trigger probability rises to 25-35%. The dynamic pricing en
 - [ ] RazorpayX test-mode payout integration
 - [ ] 2-minute demo video
 
-### Phase 3: Scale & Optimize (Weeks 5-6, Apr 5 - 17)
+### Phase 3: Scale & Optimize <sub>Apr 5 - 17</sub>
+
 - [ ] Advanced fraud detection (all 4 layers — Autoencoder, LSTM, GNN, XGBoost)
 - [ ] Instant payout system (simulated end-to-end)
 - [ ] Predictive risk engine with next-week forecasting
 - [ ] Worker dashboard (earnings protected, active coverage, trust score)
-- [ ] Admin dashboard (loss ratios, trigger feed, fraud flags, predictive analytics)
+- [ ] Admin dashboard (loss ratios, trigger feed, fraud flags, analytics)
 - [ ] Evidence Bundle for every claim (multi-source proof card)
-- [ ] 5-minute demo video + final pitch deck (PDF)
+- [ ] 5-minute demo video + final pitch deck
+
+```mermaid
+gantt
+    title Zynvaro Development Timeline
+    dateFormat YYYY-MM-DD
+    axisFormat %b %d
+
+    section Phase 1 — Seed
+    Ideation & Research          :done, p1a, 2026-03-04, 2026-03-15
+    README & Repo Setup          :done, p1b, 2026-03-15, 2026-03-20
+    Phase 1 Submission           :milestone, m1, 2026-03-20, 0d
+
+    section Phase 2 — Scale
+    Registration & Onboarding    :p2a, 2026-03-21, 4d
+    Policy Management CRUD       :p2b, 2026-03-25, 3d
+    Dynamic Premium Engine       :p2c, 2026-03-25, 5d
+    Parametric Trigger System    :p2d, 2026-03-28, 4d
+    Claims + Fraud Layer 1       :p2e, 2026-03-30, 3d
+    RazorpayX Integration        :p2f, 2026-04-01, 2d
+    Phase 2 Submission           :milestone, m2, 2026-04-04, 0d
+
+    section Phase 3 — Soar
+    Advanced Fraud (4 Layers)    :p3a, 2026-04-05, 5d
+    Predictive Risk Engine       :p3b, 2026-04-07, 4d
+    Dashboards (Worker + Admin)  :p3c, 2026-04-10, 4d
+    Evidence Bundles + Payouts   :p3d, 2026-04-12, 3d
+    Demo Video + Pitch Deck      :p3e, 2026-04-14, 3d
+    Phase 3 Submission           :milestone, m3, 2026-04-17, 0d
+```
 
 ---
 
-## 13. Why KamaiKavach Wins
+## 🏆 Why Zynvaro Wins
 
-### What Makes This a 5-Star, Not a 3-Star
+### What Makes This a ⭐⭐⭐⭐⭐, Not a ⭐⭐⭐
 
-| Dimension | 3-Star (Meets Brief) | 5-Star (KamaiKavach) |
-|-----------|---------------------|---------------------|
-| **Architecture** | Single weather trigger, cron polling, monolithic backend | Multi-source event-driven pipeline, H3 spatial grid, 4-layer fraud ML, Kafka streaming |
-| **UX** | Download app, fill forms, press "Claim Now" | Zero-install PWA + WhatsApp, 3-screen onboarding, zero-touch claims, money in 5 minutes |
-| **Logic** | "It rained, so pay everyone" | IMD/CPCB official thresholds, dynamic weekly pricing with SHAP explainability, 62% target loss ratio, LTV/CAC 9.7x |
+<div align="center">
 
-### Our 5 Unicorn Differentiators
+| Dimension | ⭐⭐⭐ Meets Brief | ⭐⭐⭐⭐⭐ Zynvaro |
+|:---------:|:------------------:|:------------------:|
+| **Architecture** | Single weather trigger, cron polling, monolithic backend | Multi-source event-driven pipeline, H3 spatial grid, 4-layer fraud ML, streaming |
+| **UX** | Download app, fill forms, press "Claim Now" | Zero-install PWA + WhatsApp, 3-screen onboard, zero-touch claims, money in 5 min |
+| **Logic** | "It rained, so pay everyone" | IMD/CPCB official thresholds, dynamic pricing with SHAP explainability, 62% loss ratio, LTV/CAC 9.7x |
 
-1. **Platform Outage Insurance** — We insure digital infrastructure downtime. No other team will think of this. The Cloudflare Dec 2025 outage proves it's real and devastating.
+</div>
 
-2. **Preventive Payouts** — AI predicts heatwave 48hrs ahead, sends ₹50 for ORS proactively. Prevents the larger ₹600 claim. Insurance becomes proactive, not reactive.
+### 🦄 Our 5 Unicorn Differentiators
 
-3. **Evidence Bundle Claims** — Every payout shows a "Proof Card" combining 2+ weather sources, AQI data, zone match, and timestamped logs. Directly addresses basis risk and builds trust.
+<table>
+<tr>
+<td align="center" width="20%">
 
-4. **H3 Hexagonal Risk Map** — Hyper-local zone-level risk visualization using Uber's H3 grid + Deck.gl WebGL rendering. Visually stunning, technically impressive, and genuinely useful.
+**☁️**<br>**Platform Outage Insurance**
 
-5. **Adversarial-Grade Anti-Spoofing** — 7-signal authenticity scoring, graph-based syndicate detection, graduated response that protects honest workers. Built to survive the Market Crash scenario and beyond.
+<sub>We insure digital infrastructure downtime. Cloudflare Dec 2025 outage proves it's real.</sub>
+
+</td>
+<td align="center" width="20%">
+
+**🔮**<br>**Preventive Payouts**
+
+<sub>AI predicts heatwave 48hrs ahead, sends ₹50 for ORS. Prevents the ₹600 claim.</sub>
+
+</td>
+<td align="center" width="20%">
+
+**📋**<br>**Evidence Bundles**
+
+<sub>Every payout shows a "Proof Card" with 2+ weather sources, AQI, zone match, logs.</sub>
+
+</td>
+<td align="center" width="20%">
+
+**🗺️**<br>**H3 Hexagonal Grid**
+
+<sub>Uber's H3 + Deck.gl WebGL for hyper-local zone risk visualization.</sub>
+
+</td>
+<td align="center" width="20%">
+
+**🛡️**<br>**Anti-Spoofing**
+
+<sub>7-signal authenticity scoring + graph syndicate detection. Market Crash proof.</sub>
+
+</td>
+</tr>
+</table>
 
 ---
 
-<p align="center">
-  <b>KamaiKavach</b> — Because every delivery matters. Every rider deserves a safety net.
-</p>
+## 👥 Team AeroFyta
 
-<p align="center">
-  <i>Built with conviction by Team AeroFyta for Guidewire DEVTrails 2026</i>
-</p>
+<div align="center">
+
+| | Name | Role |
+|:-:|:----:|:----:|
+| 👨‍💻 | **Danish A G** | Team Lead |
+| 👨‍💻 | **Sanjay N** | Developer |
+| 👨‍💻 | **Athishaya K** | Developer |
+| 👨‍💻 | **Vishal C B** | Developer |
+| 👨‍💻 | **Hariharan C V** | Developer |
+
+</div>
+
+---
+
+<div align="center">
+
+### *Zynvaro — Because every delivery matters. Every rider deserves a safety net.*
+
+<sub>Built with conviction by **Team AeroFyta** for **Guidewire DEVTrails 2026 — Unicorn Chase**</sub>
+
+<br>
+
+![Footer](https://capsule-render.vercel.app/api?type=waving&color=0:0F2027,50:203A43,100:2C5364&height=120&section=footer)
+
+</div>
